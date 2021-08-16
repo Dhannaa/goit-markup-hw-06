@@ -304,13 +304,15 @@ p {
   font: inherit;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  outline: none;
+  transition: border-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 .icon-form {
   position: absolute;
   top: 50%;
   left: 12px;
   display: inline-block;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 .form-textarea {
   position: relative;
@@ -322,8 +324,9 @@ p {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
-  outline: none;
   cursor: pointer;
+  transition: border-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .form-field textarea::placeholder {
@@ -333,6 +336,17 @@ p {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.form-field:focus-within > .form-input {
+  border-color: var(--accent-color);
+  outline: none;
+}
+.form-field:focus-within > .icon-form {
+  fill: var(--accent-color);
+}
+.form-field-comment:focus-within > .form-textarea {
+  border-color: var(--accent-color);
+  outline: none;
+}
 .checkbox {
   position: absolute;
   clip: rect(0 0 0 0);
