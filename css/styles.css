@@ -235,6 +235,7 @@ p {
     var(--transition-timing-function);
 }
 .btn-modal {
+  cursor: pointer;
   position: absolute;
   width: 30px;
   height: 30px;
@@ -250,31 +251,25 @@ p {
   border-radius: 50%;
 }
 .form {
-  cursor: pointer;
+  padding: 40px;
 }
 .form-feedback {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  margin: 40px 40px 12px;
+  margin-bottom: 12px;
 }
 
 .form-field {
   position: relative;
   display: block;
-  margin-left: 40px;
-  margin-right: 40px;
   margin-bottom: 10px;
-  padding: 0;
 }
 .form-field-comment {
   position: relative;
   display: block;
-  margin-left: 40px;
-  margin-right: 40px;
   margin-bottom: 20px;
-  padding: 0;
 }
 .form-label {
   display: block;
@@ -360,7 +355,6 @@ p {
 .form-checkbox {
   display: flex;
   align-items: center;
-  margin-left: 54px;
   margin-bottom: 30px;
 }
 .form-checkbox-icon {
@@ -699,12 +693,8 @@ img {
 
 /*footer*/
 .footer {
-  width: 1600px;
-  height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #2f303a;
 }
 .footer-flex-contfiner {
@@ -751,7 +741,6 @@ img {
   align-items: flex-start;
   padding: 0;
   margin-left: 70px;
-  margin-bottom: 97px;
 }
 .footer-title {
   width: 145px;
@@ -789,11 +778,7 @@ img {
 .form-footer {
   display: inline-flex;
   flex-direction: column;
-  padding: 0;
   margin-left: 93px;
-  margin-bottom: 94px;
-  min-width: 570px;
-  min-height: 86px;
 }
 
 .form-subscript {
